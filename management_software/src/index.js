@@ -8,7 +8,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();*/
 import store, { bookGuest, checkoutGuest,cleanRoom} from './store'
 
-store.dispatch(())
+store.dispatch((bookGuest))
 
 
 
