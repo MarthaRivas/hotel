@@ -75,14 +75,14 @@ if (action.type === "BOOK_GUEST"){
         bookings: [...state.bookings, action.payload]
     }
     }
-/*if (action.type === "CHECK_OUT_GUEST") {
+if (action.type === "CHECK_OUT_GUEST") {
     const { guest, room} = action.payload
     return {
         ...state,
-        bookings: state.bookings.filter(g => 
-            !(b.guest == guest && b.room === room))
+        bookings: state.bookings.filter(b => 
+            !(b.guest === guest && b.room === room))
     }
-    }  */  
+    }   
     
     return state
 }

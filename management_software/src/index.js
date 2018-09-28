@@ -12,12 +12,15 @@ import store, { addGuest,removeGuest,cleanRoom,dirtyRoom,bookGuest,checkoutGuest
 store.dispatch(addGuest("olmo"))
 store.dispatch(addGuest("anna"))
 
+store.dispatch (dirtyRoom ("[2]"))
+store.dispatch (removeGuest("anna"))
 store.dispatch(cleanRoom("[1]"))
 store.dispatch(cleanRoom("[2]"))
 
 store.dispatch(bookGuest("olmo", "[1]"))
 
 store.dispatch(bookGuest("anna", "[2]"))
+store.dispatch(checkoutGuest ("anna", "[2]" ))
 
 
 
